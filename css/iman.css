@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito:wght@400&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0; 
+    color: #2C3E50; 
+}
+
+header {
+    background-color: #022C43;
+    color: #FFD700;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+header p {
+    font-size: 1.5em;
+    z-index: 2;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #046307;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 30px auto;
+    width: fit-content;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #022C43; 
+    color: #FAF3E0; 
+}
+
+main {
+    padding: 40px;
+    background: white;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.intro, .misconceptions {
+    padding: 40px;
+    background: #FAF3E0;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+
+.intro h2, .misconceptions h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    color: #046307; 
+    margin-bottom: 20px;
+}
+
+.intro p, .misconceptions p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #2C3E50;
+}
+
+.prayer-times {
+    background-color: #046307;
+    color: #FAF3E0; 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.prayer-times h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.prayer-times ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+.prayer-times ul li {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.prayer-times ul li span {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+
+.next-prayer {
+    text-align: center;
+    margin: 50px 0;
+    padding: 40px;
+    background-color: #fff9e6;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.next-prayer h2 {
+    font-size: 2.5em;
+    color: #046307;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #D35400;
+    letter-spacing: 3px;
+}
+
+#countdown span {
+    display: inline-block;
+    min-width: 70px;
+    padding: 15px;
+    background-color: #046307;
+    color: white;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+footer {
+    background-color: #022C43;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: #022C43;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #046307;
+    color: #FAF3E0;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .prayer-times ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro, .misconceptions {
+        padding: 20px;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.fixed-consent-message {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    border-radius: 5px;
+}
+
+.fixed-consent-message p {
+    margin: 0 0 10px 0;
+}
+
+.fixed-consent-message button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.fixed-consent-message button:hover {
+    background-color: #0056b3;
+}
+
+.fixed-consent-message #more-info {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.highlighted-section {
+    background-color: #fdf6d3; 
+    border: 1px solid #e8d098; 
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.highlighted-section h2 {
+    color: #046307;
+    margin-bottom: 15px;
+}
+
+.highlighted-section p {
+    color: #4b5320;
+    line-height: 1.8;
+}
+
+
